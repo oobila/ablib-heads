@@ -17,7 +17,7 @@ public class Head {
     private final Symbol s;
     private final HeadCollection collection;
 
-    public class HeadBuilder {
+    public static class HeadBuilder {
         private boolean isChar = false;
         private char c = 0;
 
