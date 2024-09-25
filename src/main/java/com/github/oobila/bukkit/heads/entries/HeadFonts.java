@@ -1,5 +1,8 @@
 package com.github.oobila.bukkit.heads.entries;
 
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
+
 import static com.github.oobila.bukkit.heads.model.HeadCollection.BLACK_FONT;
 import static com.github.oobila.bukkit.heads.model.HeadCollection.GRAY_FONT;
 import static com.github.oobila.bukkit.heads.model.HeadCollection.LIGHT_BLUE_FONT;
@@ -9,9 +12,11 @@ import static com.github.oobila.bukkit.heads.model.HeadCollection.YELLOW_FONT;
 import static com.github.oobila.bukkit.heads.model.HeadDb.add;
 import static com.github.oobila.bukkit.heads.model.HeadDb.head;
 
-public class Fonts {
+@SuppressWarnings("unused")
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+public class HeadFonts {
 
-    static {
+    public static void register() {
 
         //#### FONT TEMPLATE ####
 //        add(head("White 0", "").collection(BLACK_FONT).c('0').build());
